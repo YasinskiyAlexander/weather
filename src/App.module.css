@@ -5,10 +5,41 @@
     overflow: clip;
 }
 
+/*[class*="_container"]*/
+.header_nav_container,
+.footer_container {
+    max-width: 1370px;
+    width: 100%;
+    padding: 0 32pt;
+    margin: 0 auto;
+}
+
 .header {
     background-color: #282c34;
     font-size: calc(10px + 2vmin);
     color: white;
+}
+
+.header_nav_container,
+.footer_container {
+    padding-top: 8pt;
+    padding-bottom: 8pt;
+}
+
+.nav_list{
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+
+.logo_img{
+    width: 70pt;
+    height: 30pt;
 }
 
 .page {
@@ -16,5 +47,12 @@
 }
 
 .footer {
-    background: #282c34;
+    background: #F2F2F2;
+}
+
+.copyright{
+    font-weight: 400;
+    font-size: 14px;
+    color: #48484A;
+    line-height: 2;
 }
