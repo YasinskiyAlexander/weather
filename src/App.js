@@ -30,8 +30,9 @@ function App() {
             </nav>
         </header>
         <main className={styles.page}>
+            <div className={styles.main_container}>
 
-
+            </div>
         </main>
         <footer className={styles.footer}>
             <div className={styles.footer_container}>

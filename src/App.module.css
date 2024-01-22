@@ -7,7 +7,8 @@
 
 /*[class*="_container"]*/
 .header_nav_container,
-.footer_container {
+.footer_container,
+.main_container{
     max-width: 1370px;
     width: 100%;
     padding: 0 32pt;
