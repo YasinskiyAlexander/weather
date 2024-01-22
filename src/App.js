@@ -2,6 +2,7 @@ import './App.css';
 import styles from './App.module.css';
 import {IconButton, InputBase, Paper} from "@mui/material";
 import SearchIcon from '@mui/icons-material/Search';
+import {Weather} from "./components/Weather";
 
 function App() {
   return (
@@ -31,7 +32,7 @@ function App() {
         </header>
         <main className={styles.page}>
             <div className={styles.main_container}>
-
+                <Weather/>
             </div>
         </main>
         <footer className={styles.footer}>
