@@ -1,4 +1,5 @@
 import {Box, Tab, Tabs} from "@mui/material";
+import {ZERO} from "../constants/initial";
 
 export const TabGroup = ({setTabId, tabId, weather}) => {
 
@@ -11,7 +12,7 @@ export const TabGroup = ({setTabId, tabId, weather}) => {
             <Tabs value={tabId} onChange={handleChange} variant="fullWidth" aria-label="tabs">
                 {
                     weather.length>0 && weather.map((value, index)=>{
-                        const val = Object.values(value)[0];
+                        const val = Object.values(value)[ZERO];
                         return <Tab key={index} label = {`${val.dayOfWeek} ${val.month} ${val.day}`} />
                     })
                 }

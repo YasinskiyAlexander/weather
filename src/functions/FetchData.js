@@ -1,5 +1,6 @@
 import axios from "axios";
 import {validateData} from "./ValidateData";
+import {ZERO} from "../constants/initial";
 
 export const fetchCity = (city, setWeather) => {
     console.log("city")
@@ -8,7 +9,7 @@ export const fetchCity = (city, setWeather) => {
         .then(res=>{
             console.log("fetchCity");
             console.log(res);
-            fetchWeather(res.data[0].lat, res.data[0].lon, setWeather)
+            fetchWeather(res.data[ZERO].lat, res.data[ZERO].lon, setWeather)
         })
         .catch(error=>{
             console.log(error);
